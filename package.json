@@ -1,0 +1,30 @@
+{
+  "name": "pragaras",
+  "version": "0.0.1",
+  "description": "pragaras",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-imagemin": "~0.1.4",
+    "gulp-coffee": "~1.4.1",
+    "gulp-concat": "~2.1.7",
+    "gulp-uglify": "~0.2.0",
+    "gulp-util": "~2.2.14",
+    "gulp-browserify": "~0.4.2",
+    "gulp-styl": "~0.1.3",
+    "gulp-livereload": "~0.3.2",
+    "tiny-lr": "*",
+    "q": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bstst/pragaras.git"
+  },
+  "author": "Martin Saulis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bstst/pragaras/issues"
+  }
+}
