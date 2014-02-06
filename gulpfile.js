@@ -10,7 +10,7 @@ var Q = require('q');
 
 gulp.task('scripts', ['listen'], function() {
   gulp.src(['src/coffee/**/*.coffee'])
-    .pipe(coffee())
+    .pipe(coffee({bare: true}).on('error', function(err){ console.log(err); }))
     .pipe(uglify())
     .pipe(concat('all.min.js'))
     .pipe(gulp.dest('build/js'))
