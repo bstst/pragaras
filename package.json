@@ -1,6 +1,7 @@
 {
   "name": "pragaras",
   "version": "0.0.1",
+  "private": true,
   "description": "pragaras",
   "dependencies": {
     "gulp": "*",
@@ -13,11 +14,14 @@
     "gulp-styl": "~0.1.3",
     "gulp-livereload": "~0.3.2",
     "gulp-less": "*",
+    "gulp-nodemon": "*",
     "tiny-lr": "*",
-    "q": "*"
+    "q": "*",
+    "express": "3.4.8",
+    "jade": "*"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app/app.js"
   },
   "repository": {
     "type": "git",
