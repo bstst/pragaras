@@ -22,7 +22,8 @@
     "consolidate": "*",
     "ect": "*",
     "mongodb": "*",
-    "monk": "*"
+    "monk": "*",
+    "express-uploader": "*"
   },
   "scripts": {
     "start": "node app/app.js"

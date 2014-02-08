@@ -4,7 +4,3 @@ exports.list = (db) ->
     collection.find {}, {}, (e, docs) ->
       res.render "list",
         list: docs
-
-      return
-
-    return
