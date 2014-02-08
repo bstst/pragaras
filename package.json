@@ -18,7 +18,10 @@
     "tiny-lr": "*",
     "q": "*",
     "express": "3.4.8",
-    "jade": "*"
+    "consolidate": "*",
+    "ect": "*",
+    "mongodb": "*",
+    "monk": "*"
   },
   "scripts": {
     "start": "node app/app.js"
