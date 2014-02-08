@@ -4,6 +4,7 @@
   "private": true,
   "description": "pragaras",
   "dependencies": {
+    "coffee-script": "*",
     "gulp": "*",
     "gulp-imagemin": "~0.1.4",
     "gulp-coffee": "~1.4.1",
