@@ -6,9 +6,13 @@
 var express = require('express');
 var ect = require('ect');
 var routes = require('./routes');
-var user = require('./routes/user');
+var ads = require('./routes/ads');
 var http = require('http');
 var path = require('path');
+
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:27017/pragaras');
 
 var app = express();
 
@@ -36,7 +40,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/ads', ads.list(db));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
