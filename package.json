@@ -23,7 +23,8 @@
     "ect": "*",
     "mongodb": "*",
     "monk": "*",
-    "express-uploader": "*"
+    "express-uploader": "*",
+    "elasticsearch": "*"
   },
   "scripts": {
     "start": "node app/app.js"

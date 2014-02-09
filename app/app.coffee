@@ -9,6 +9,11 @@ monk = require("monk")
 db = monk("localhost:27017/pragaras")
 app = express()
 
+es = require('elasticsearch')
+client = new es.Client
+  host: 'localhost:9200'
+  log: 'trace'
+
 app.set "port", process.env.PORT or 3000
 
 app.set "views", path.join(__dirname, "views")
