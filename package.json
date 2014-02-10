@@ -24,7 +24,10 @@
     "mongodb": "*",
     "monk": "*",
     "express-uploader": "*",
-    "elasticsearch": "*"
+    "elasticsearch": "*",
+    "request": "*",
+    "cheerio": "*",
+    "underscore": "*"
   },
   "scripts": {
     "start": "node app/app.js"

@@ -1,0 +1,10 @@
+<% extend 'layout.ect' %>
+
+<div>site: <%- @name %></div>
+<div>
+  <% for item in @items: %>
+  <div>
+    <%- item.title %>
+  </div>
+  <% end %>
+</div>

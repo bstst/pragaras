@@ -1,7 +1,10 @@
 express = require("express")
 ect = require("ect")
+
 routes = require("./routes")
 ads = require("./routes/ads")
+admin = require("./routes/admin")
+config = require("./config")
 http = require("http")
 path = require("path")
 mongo = require("mongodb")
@@ -38,6 +41,8 @@ app.use express.errorHandler() if "development" is app.get("env")
 
 app.get "/", routes.index
 app.get "/ads", ads.list(db)
+app.get "/admin", admin.index
+app.get "/admin/site/:name", admin.site
 
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")
