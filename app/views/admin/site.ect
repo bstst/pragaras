@@ -4,7 +4,7 @@
 <div>
   <% for item in @items: %>
   <div>
-    <%- item.title %>
+    <a href="/admin/site/<%- @name %>/<%- item.id %>"><%- item.id %>, <%- item.title %></a>
   </div>
   <% end %>
 </div>

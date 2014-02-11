@@ -43,6 +43,7 @@ app.get "/", routes.index
 app.get "/ads", ads.list(db)
 app.get "/admin", admin.index
 app.get "/admin/site/:name", admin.site
+app.get "/admin/site/:name/:id", admin.item
 
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")
